@@ -1,7 +1,7 @@
-feature 'Attack player 2' do
-  scenario 'attack player 2' do
+feature 'Attacking' do
+  scenario 'attack Player 2' do
     sign_in_and_play
     click_button 'Attack'
-    expect(page).to have_content 'Attack!'
+    expect(page).to have_content 'Alice attacked Bob'
   end
 end
